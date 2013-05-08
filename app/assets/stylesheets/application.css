@@ -1,0 +1,589 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+/*CSS RESET*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+@font-face {
+    font-family: 'custom font';
+    src: url(l_10646.TTF);
+    font-weight: normal;
+    font-style: normal;
+	
+}
+
+.headline h1
+{
+	font-weight:lighter;
+	font-style:normal;
+	font-size:58px;
+	clear:both;
+	line-height:1em;
+	margin-bottom:20px;
+	letter-spacing:-2px;
+	/*color:#116899;*/
+	color:#f7f7f7;
+	font-family: 'custom font';
+}
+
+div.headline
+{
+	margin-bottom:3px;
+	padding: 5px;
+	width: 1024px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+
+body {
+	line-height: 1;
+	font-family:'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.aligncenter, div.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
+
+/*h1 {font-size:180%;}
+h2 {font-size:150%;}
+h3 {font-size:125%;}
+h4 {font-size:100%;}
+h5 {font-size:90%;}
+h6 {font-size:80%;}
+*/
+a:link {color:#0289ce;}
+a:hover {color:#f64274;}
+
+/*End RESET - Begin Full Width CSS*/
+	body {
+		background:#F2F2F2;
+		color:#2D1F16;
+		font:13px Helvetica,  Arial,  sans-serif
+	}
+
+	.wrap {
+		position:inherit;
+		margin:0 auto;
+		width:1024px;
+		border: 0px solid #000000;
+	}
+	
+	#header, #footer {
+		width:100%;
+		float:left;
+		padding:15px 0;
+		
+	}
+	
+	#header {
+		/*background:#f78300;
+		height: 150px;*/
+		border: 0px solid #000000;
+		border-top: 8px solid #005ca3;
+		background-image: url(/assets/movement.jpg);
+		background-repeat: repeat-x;
+		clear: both;
+	}
+	
+	#header .logo {
+		float:left;
+		width:100px;
+		border: 0px solid #ff0000;
+		margin: 0px 0 0 0;
+	}
+	
+	#header p {
+		float:right;
+		width:400px;
+		margin:0;
+	}
+	
+	#content {
+		padding:15px 0;
+		clear:both;
+	}
+
+
+/**************Start Footer**************/	
+	#footer {
+		background:#18191a;
+		text-align:center;
+		height: 350px;
+		margin-top: 50px;
+		border: 0px solid #ff0000;
+		box-shadow: 10px 10px 60px #888888;	
+		border-top: 8px solid #005ca3;
+	}
+	
+	#footer-container{
+		width: 1024px;
+		margin: 0 auto;
+		padding: 0 0 0 0;
+		border: 0px solid #0000ff;	
+	}
+	
+	#footer-container .footer-coloumn{
+		width: 300px;
+		margin: 0 0 0 20px;
+		padding: 5px auto;
+		border: 0px solid #00ff00;
+		float: left;
+		text-align: left;
+	}
+	
+	.footer-coloumn h1{
+		font-family: 'custom font';
+		color: #dfdfdf;
+		font-size: 18px;
+		text-shadow: 4px 2px 5px #000000;
+		padding: 5px auto;
+		margin-bottom: 10px;
+	}
+	
+	.footer-coloumn p{
+		font-family:'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+		font-size: 13px;
+		line-height: 1.5em;
+		color: #999999;
+		text-align: left;
+	}
+	
+	.footer-coloumn ul{
+		list-style: none;
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+	}
+	
+	.footer-coloumn ul li{
+		display: block;
+		margin: 0 0 0 0;
+		padding: 10px 0 0 0px;
+		border-bottom: 1px solid #666666;
+	}
+	
+	.footer-coloumn ul li a{
+		color:#999999;
+		font-size: 13px;
+		text-decoration: none;
+	}
+	
+	.footer-coloumn ul li a:hover{
+		color:#005ca3;
+		font-size: 13px;
+		text-decoration: underline;
+		margin: 0 0 2px 0;
+	}
+	
+	#news-letter{
+		width: 270px;
+		border: 0px solid #ff0000;
+		margin: 20px 0 0 0;
+		padding: 0 0 0 0;
+		color: #005ca3;
+	}
+	
+	#news-letter label{
+		font-size: 18px;
+		color: #005ca3;
+	}
+	
+	.news-letter h1{
+		font-family:'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+		color: #ffffff;
+		font-size: 10px;
+		text-shadow: 4px 2px 5px #000000;
+		padding: 5px auto;
+		margin-bottom: 15px;
+	}
+	
+	.footer-coloumn td{ 
+		margin: 0 0 5px; 
+		padding: 0 0 5px; 
+		border-bottom: 0px solid #4e4e4e; 
+		font-family:'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+		font-size:12;
+	}
+	
+	.footer-coloumn td a{ 
+		color: #999999; 
+		text-decoration:none;
+	}
+	
+	.footer-coloumn td a:hover { 
+		/*color: #3C5DA4; */
+		color:#005ca3;
+		text-decoration:underline;
+	}
+/********************End Footer**********************/
+	
+/********************Site Menu**********************/
+#menu{
+	margin: 30px 0px 0 0;
+	padding: 0 0 0 0;
+	border: 0px solid #000000;
+	float:right;	
+}
+#menu ul{
+	list-style:none;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+#menu ul li{
+	display:inline;
+	margin:0 0 0 0;
+	padding:10px 0 0 20px;
+}
+#menu ul li a{
+	/*color:#116899;*/
+	color:#f7f7f7;
+	font-size:20px;
+	font-weight:lighter;
+	text-decoration:none;
+	font-family: 'custom font';
+}
+#menu ul li:hover a:hover{
+	color:#116899;
+	text-decoration:underline;
+
+}
+
+/*********************Site Menu End******************/
+
+/*********************Search Form*******************/
+
+input[type="text"]{
+   	outline: none;
+	/*box-shadow: 0px 0px 5px #61C5FA;*/
+	/*border:1px solid #5AB0DB;*/
+	border:1px solid #999999;
+	width:200px;
+	height:25px;
+	font-size:18px;
+	color:#116899;
+	text-indent:5px;
+}
+input[type="text"]:focus{
+   	outline: none;
+	box-shadow: 0px 0px 5px #61C5FA;
+	border:1px solid #5AB0DB;
+	width:200px;
+	height:25px;
+	font-size:18px;
+	color:#666666;
+	text-indent:5px;
+}
+/*********************Search Form End**************/
+
+/********************Coloumn Start**********************/
+
+#coloumn-wraper{
+	width: 1024px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	border: 0px solid #000000;	
+}
+#coloumn-wraper .coloumn-large{
+	width: 280px;
+	border: 0px solid #ff0000;
+	margin: 0 0 0 20px;
+	float: left;
+	height: 300px;
+}
+#coloumn-wraper .coloumn{
+	width: 380px;
+	border: 0px solid #ff0000;
+	margin: 0 0 0 20px;
+	float: left;
+	height: 300px;
+}
+/********************Coloumn End**********************/
+
+/*****************Index Page************************/
+
+div.headline
+{
+	margin-bottom:3px;
+	padding: 5px;
+}
+
+div.manifesto
+{
+	width: 700px;
+	height:430px;
+	text-align:center;
+	background-color:#F2F2F2;
+	border:0px solid #333333;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	margin: 0 0 0 -5px;
+}
+
+div.column
+{
+	width:280px;
+	float:left;
+	margin-left:10px;
+	margin-right:80px;
+}
+
+div.column.end
+{
+	margin-right:0;
+}
+
+div.belief
+{
+	text-align:left;
+	font-family:'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	line-height:1.4em;
+	font-size:12px;
+	overflow:hidden;
+	margin:20px 0;
+}
+
+div.belief h4
+{
+	font-family:'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	font-size:16px;
+	color:#3c5da4;
+	margin:5px 0;
+}
+
+div.belief p
+{
+	font-family:'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	margin:0 0 0 45px;
+}
+
+div.belief h3
+{
+	float:left;
+	font-size:42px;
+	font-weight:500;
+	line-height:normal;
+	color:#CCC;
+	margin:-10px 15px 0 0;
+}
+
+div.belief.bottom
+{
+	margin-bottom:0;
+}
+
+/*****************End index Page******************/
+
+/****************Start Product container for index page******/
+#product-container{
+	width: 1024px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	border: 0px solid #116899;	
+}
+
+#product-container .product{
+	width: 120px;
+	border: 0px solid #ff0000;
+	margin: 0 0 0 20px;
+	float: left;
+}
+
+#product-container .product-large{
+	width: 470px;
+	border: 0px solid #999999;
+	margin: 20px 0 0 20px;
+	float: left;
+}
+/**************End Product container for index page******/
+
+/**About Start**/
+#about-container{
+	width: 1024px;
+	border: 0px solid #ff0000;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+#about-container .about-coloumn{
+	width: 600px;
+	border: 0px solid #00ff00;
+	float: left;
+	padding: 5px 0 0 2px;
+	margin: 0 0 0 10px;
+}
+#about-container .about-coloumn-small{
+	width: 380px;
+	border: 0px solid #00ff00;
+	float: left;
+	padding: 5px 0 0 2px;
+	margin: 0 0 0 10px;
+}
+
+#about-container .about-coloumn-contact{
+	width: 450px;
+	border: 0px solid #00ff00;
+	float: left;
+	padding: 5px 0 0 2px;
+	margin: 0 0 0 10px;
+}
+
+.about-coloumn-small h1{
+	font-family: 'custom font';
+	font-size: 22px;
+	font-weight: bold;
+	color: #333333;
+}
+
+.about-coloumn .about-img{
+	width: 100px;
+	margin: 10px; 
+	float: left;
+ 	-webkit-transition: all 0.3s ease-out; 
+ 	-moz-transition: all 0.3s ease; 
+ 	-o-transition: all 0.3s ease;
+
+}
+.about-coloumn-contact td{
+	vertical-align: middle;
+	margin: 5px 0 0 0;
+	padding: 15px 0 0 0;
+	font-size: 16px;
+	color: #666666;
+	text-indent: 15px;
+}
+.about-coloumn-contact td input[type="text"]{
+   	outline: none;
+	box-shadow: 0px 0px 5px #61C5FA;
+	border:1px solid #5AB0DB;
+	border:1px solid #999999;
+	width:250px;
+	height:25px;
+	font-size:18px;
+	color:#116899;
+	text-indent:5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.about-coloumn-contact td input[type="text"]:focus{
+   	outline: none;
+	box-shadow: 0px 0px 5px #61C5FA;
+	border:1px solid #5AB0DB;
+	width:250px;
+	height:25px;
+	font-size:18px;
+	color:#666666;
+	text-indent:5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.about-coloumn-contact td textarea{
+   	outline: none;
+	box-shadow: 0px 0px 5px #61C5FA;
+	border:1px solid #5AB0DB;
+	border:1px solid #999999;
+	width: 300px; 
+	height: 90px; 
+	max-height: 90px; 
+	max-width: 300px;
+	font-size:18px;
+	color:#116899;
+	text-indent:5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.about-coloumn-contact td textarea:focus{
+   	outline: none;
+	box-shadow: 0px 0px 5px #61C5FA;
+	border:1px solid #5AB0DB;
+	width: 300px; 
+	height: 90px; 
+	max-height: 90px; 
+	max-width: 300px;
+	font-size:18px;
+	color:#666666;
+	text-indent:5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.about-img:hover{
+	 -webkit-transform: rotate(-40deg); 
+	 -moz-transform: rotate(-40deg); 
+	 -o-transform: rotate(-40deg);
+	 margin: 10px;
+}
+.about-coloumn-small p{
+	color: #666666;
+	line-height: 1.5em;
+	font-weight: lighter;
+	font-size: 23px;
+	margin: 10px 0 0 0;
+}
+
+.img-circle{
+	border-radius: 50%;
+	display: inline-block;
+	margin-right: 20px;
+	width: 100px;
+	height: 100px;
+}
+/**About End**/
+	
+/*****Career Start***/
+#career{
+	width: 624px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	border: 0px solid #ff0000;
+}
+#career p{
+	font-size: 14px;
+	color: #666666;
+	line-height: 18px;
+	margin-top: 10px;
+	padding: 0 0 0 0;
+}
+/*****Career End***/

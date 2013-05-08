@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= yield :title %>
+  <%= stylesheet_link_tag    "application", "nivo-slider", "style", "default", 'gmaps4rails' %>
+  <%= javascript_include_tag "application", "jquery-1.7.1.min", "jquery.nivo.slider" %>
+  <%= csrf_meta_tags %>
+  
+     <script type="text/javascript" language="javascript">
+         $(function () {
+             $('#scrlBotm').click(function () {
+                 $('html, body').animate({
+                     scrollTop: $(document).height()
+                 },
+                 1500);
+                 return false;
+             });
+
+             $('#scrlTop').click(function () {
+                 $('html, body').animate({
+                     scrollTop: '0px'
+                 },
+                 500);
+                 return false;
+             });
+         });
+    </script>
+ 
+</head>
+<body>
+
+<!--Header Start from here-->
+<%= render "home/simpleheader.rhtml"%>
+<!--Header End here-->
+
+<!--Main Content Start from here-->
+<div class="wrap">
+	<div id="content">		
+		<%= yield %>
+    </div>
+</div>
+<!--Manin Content End here-->
+
+<!--Footer Start from here-->
+<%= render "home/footer.rhtml"%>
+<!--Footer End here-->
+</body>
+</html>

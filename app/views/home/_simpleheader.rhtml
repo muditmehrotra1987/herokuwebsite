@@ -1,0 +1,25 @@
+<div id="header">
+	<div class="wrap">
+    	<div class="logo">
+        	<a href="/index"><img src="./assets/Header.png"></a>
+         </div>
+        <div style="margin: 50px 0 0 63em;"><input type="text" name="search" placeholder="Search" /></div>
+            <div id="menu">
+            	<ul>
+                	<li><%= link_to "Home", index_path %></li>
+                	<li><%= link_to "Products", products_path %></li>
+                	<li><%= link_to "Services", services_path %></li>
+                	<li><%= link_to "Portfolio", portfolio_path %></li>
+                	<li><%= link_to "Career", career_path %></li>
+					<li><%= link_to "About", about_path %></li>
+					<li><%= link_to "Contact", contact_path %></li>               	
+                </ul>
+            </div>
+           <br /><br /><br /> <br /><br /><br /> <br />
+    </div>
+
+	<div class="headline">
+    	<%= yield :hedline %> 
+	</div>
+
+</div>
