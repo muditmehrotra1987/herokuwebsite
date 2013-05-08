@@ -123,6 +123,7 @@ a:hover {color:#f64274;}
 		border-top: 8px solid #005ca3;
 		background-image: url(/assets/movement.jpg);
 		background-repeat: repeat-x;
+		background-size:100%;
 		clear: both;
 	}
 	
